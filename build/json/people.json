@@ -1,0 +1,6 @@
+{
+  "items": [
+    { "id": 1, "name": "Ghete de drumeție X-Ultra",  "price": "500 RON", "brand" : "Salomon" },
+    { "id": 2, "name": "Ghete de drumeție X-ALP", "price": "399 RON", "brand" : "Salomon"  }
+  ]
+}
