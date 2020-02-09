@@ -1,5 +1,6 @@
 import React from 'react';
 import Timer from './Timer.jsx';
+import Saves from './Saves.jsx';
 
 class Person extends React.Component {
 
@@ -45,14 +46,19 @@ class Person extends React.Component {
     } else {
       return (
         <div className="products">
-        {items.map(item => (
-          <div className="product" key={item.name}>
-            <div className="brand">{item.brand}</div>
-            <div className="name">{item.name}</div>
-            <div className="price">{item.price}</div>
-            <div className="timer"><Timer date={new Date()} /></div>
-          </div>
-        ))}
+          {items.map(item => (
+            <div className="product" key={item.name}>
+              <div className="brand">{item.brand}</div>
+              <div className="name">{item.name}</div>
+              <div className="price">{item.price}</div>
+              <div className="timer"><Timer date={new Date()} /></div>
+
+              <Saves
+                saved={false}  
+                numSaves={2}
+              ></Saves>
+            </div>
+          ))}
         </div>
       );
     }
